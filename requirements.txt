@@ -1,0 +1,9 @@
+streamlit
+playwright
+beautifulsoup4
+requests
+crewai
+polars
+openai
+supabase
+sqlalchemy
