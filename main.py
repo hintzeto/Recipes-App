@@ -1,6 +1,10 @@
+from supabase import create_client, Client
 import streamlit as st
 from backend.scraper import scrape_url
 
+url: str = st.secrets["SUPABASE_URL"]
+key: str = st.secrets["SUPABASE_KEY"]
+supabase: Client = create_client(url, key)
 
 st.set_page_config(page_title="AI Recipe Extractor", layout="wide")
 
